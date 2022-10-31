@@ -12,8 +12,14 @@ func GeneratePassList(lat, lng, alt float64, sgp4 cppsgp4.SGP4, start, end time.
 	startUtc := start.UTC()
 	endUtc := end.UTC()
 
-	startDt := cppsgp4.NewDateTime(startUtc.Year(), int(startUtc.Month()), startUtc.Day(), startUtc.Hour(), startUtc.Minute(), startUtc.Second())
-	endDt := cppsgp4.NewDateTime(endUtc.Year(), int(endUtc.Month()), endUtc.Day(), endUtc.Hour(), endUtc.Minute(), endUtc.Second())
+	startDt, err := NewDateTimeFromTime(startUtc)
+	if err != nil {
+		return nil, err
+	}
+	endDt, err := NewDateTimeFromTime(endUtc)
+	if err != nil {
+		return nil, err
+	}
 
 	coords, err := NewCoordGeodetic(lat, lng, alt)
 	if err != nil {
@@ -28,5 +34,5 @@ func GeneratePassList(lat, lng, alt float64, sgp4 cppsgp4.SGP4, start, end time.
 		passListSlice[i] = passList.Get(int(i))
 	}
 
-	return passListSlice, nil
+	return passListSlice, err
 }

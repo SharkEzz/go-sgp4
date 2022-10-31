@@ -1,8 +1,6 @@
-package sgp4
+package utils
 
-import (
-	"math"
-)
+import "math"
 
 func Rad2Deg(rad float64) float64 {
 	return rad * (180.0 / math.Pi)

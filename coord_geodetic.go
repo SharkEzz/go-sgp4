@@ -10,5 +10,5 @@ func NewCoordGeodetic(lat, lon, alt float64) (c cppsgp4.CoordGeodetic, err error
 	c.SetLatitude(lat)
 	c.SetLongitude(lon)
 
-	return c, nil
+	return c, err
 }

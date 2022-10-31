@@ -11,5 +11,5 @@ func NewCoordTopocentric(azimuth, elevation, xrange, range_rate float64) (c cpps
 	c.SetXrange(xrange)
 	c.SetRange_rate(range_rate)
 
-	return c, nil
+	return c, err
 }

@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/SharkEzz/sgp4/cppsgp4"
+	"github.com/SharkEzz/sgp4/utils"
 )
 
 type SGP4 struct {
@@ -26,15 +27,17 @@ func (s *SGP4) SGP4() cppsgp4.SGP4 {
 func (s *SGP4) Position(lt time.Time) (lat float64, lng float64, alt float64, err error) {
 	defer catch(&err)
 
-	t := lt.UTC()
-	dt := cppsgp4.NewDateTime(t.Year(), int(t.Month()), t.Day(), t.Hour(), t.Minute(), t.Second())
+	dt, err := NewDateTimeFromTime(lt.UTC())
+	if err != nil {
+		return 0, 0, 0, err
+	}
 
 	pos := s.csgp4.FindPosition(dt)
 	geo := pos.ToGeodetic()
 
-	lat = Rad2Deg(geo.GetLatitude())
-	lng = Rad2Deg(geo.GetLongitude())
+	lat = utils.Rad2Deg(geo.GetLatitude())
+	lng = utils.Rad2Deg(geo.GetLongitude())
 	alt = geo.GetAltitude()
 
-	return lat, lng, alt, nil
+	return lat, lng, alt, err
 }
