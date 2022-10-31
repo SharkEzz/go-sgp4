@@ -29,7 +29,7 @@ func (dt *DateTime) Year() int {
 }
 
 func (dt *DateTime) Month() int {
-	return int(dt._dateTime.Month())
+	return dt._dateTime.Month()
 }
 
 func (dt *DateTime) Day() int {

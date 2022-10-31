@@ -19,11 +19,13 @@ func NewSGP4(tle *Tle) (p *SGP4, err error) {
 	}, nil
 }
 
-func (s *SGP4) FindPosition(dt *DateTime) *Eci {
-	return &Eci{s.csgp4.FindPosition(dt._dateTime)}
+func (s *SGP4) PositionFromDateTime(dt *DateTime) (eci *Eci, err error) {
+	defer catch(&err)
+
+	return &Eci{s.csgp4.FindPosition(dt._dateTime)}, err
 }
 
-func (s *SGP4) Position(lt time.Time) (eci *Eci, err error) {
+func (s *SGP4) PositionFromTime(lt time.Time) (eci *Eci, err error) {
 	defer catch(&err)
 
 	dt, err := NewDateTimeFromTime(lt.UTC())
@@ -31,5 +33,5 @@ func (s *SGP4) Position(lt time.Time) (eci *Eci, err error) {
 		return nil, err
 	}
 
-	return s.FindPosition(dt), err
+	return s.PositionFromDateTime(dt)
 }

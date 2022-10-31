@@ -50,7 +50,8 @@ func TestSGP4_FindPosition(t *testing.T) {
 			if err != nil {
 				t.Fatal(err)
 			}
-			eci, err := p.Position(t1)
+
+			eci, err := p.PositionFromTime(t1)
 			if err != nil {
 				t.Fatal(err)
 			}
