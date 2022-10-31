@@ -8,10 +8,10 @@ type Eci struct {
 	ceci cppsgp4.Eci
 }
 
-func NewEci(dt cppsgp4.DateTime, coords cppsgp4.CoordGeodetic) (e *Eci, err error) {
+func NewEci(dt *DateTime, coords *CoordGeodetic) (e *Eci, err error) {
 	defer catch(&err)
 
-	return &Eci{cppsgp4.NewEci(dt, coords)}, err
+	return &Eci{cppsgp4.NewEci(dt._dateTime, coords._coordGeodetic)}, err
 }
 
 func (e *Eci) ToGeodetic() (c *CoordGeodetic, err error) {

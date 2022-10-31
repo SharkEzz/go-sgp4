@@ -24,8 +24,8 @@ func (t *Tle) Line2() string {
 	return t.ctle.Line2()
 }
 
-func (t *Tle) Epoch() cppsgp4.DateTime {
-	return t.ctle.Epoch()
+func (t *Tle) Epoch() *DateTime {
+	return &DateTime{t.ctle.Epoch()}
 }
 
 func (t *Tle) Inclination(in_degrees bool) float64 {

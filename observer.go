@@ -9,7 +9,7 @@ type Observer struct {
 func NewObserver(coords *CoordGeodetic) (o *Observer, err error) {
 	defer catch(&err)
 
-	obs := cppsgp4.NewObserver(coords.ccoordGeodetic)
+	obs := cppsgp4.NewObserver(coords._coordGeodetic)
 
 	return &Observer{obs}, err
 }

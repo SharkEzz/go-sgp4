@@ -74,6 +74,12 @@ public:
     DateTime(int year, int month, int day, int hour, int minute, int second);
     static DateTime Now(bool useMicroseconds = false);
     double ToJulian() const;
+    int Year() const;
+    int Month() const;
+    int Day() const;
+    int Hour() const;
+    int Minute() const;
+    int Second() const;
 };
 
 struct CoordGeodetic {

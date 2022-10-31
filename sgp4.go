@@ -20,7 +20,7 @@ func NewSGP4(tle *Tle) (p *SGP4, err error) {
 }
 
 func (s *SGP4) FindPosition(dt *DateTime) *Eci {
-	return &Eci{s.csgp4.FindPosition(dt.cdateTime)}
+	return &Eci{s.csgp4.FindPosition(dt._dateTime)}
 }
 
 func (s *SGP4) Position(lt time.Time) (eci *Eci, err error) {

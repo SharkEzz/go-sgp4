@@ -6,7 +6,7 @@ import (
 )
 
 type CoordGeodetic struct {
-	ccoordGeodetic cppsgp4.CoordGeodetic
+	_coordGeodetic cppsgp4.CoordGeodetic
 }
 
 func NewCoordGeodetic(lat, lon, alt float64) (c *CoordGeodetic, err error) {
@@ -17,23 +17,23 @@ func NewCoordGeodetic(lat, lon, alt float64) (c *CoordGeodetic, err error) {
 	coords.SetLatitude(lat)
 	coords.SetLongitude(lon)
 
-	return &CoordGeodetic{ccoordGeodetic: coords}, err
+	return &CoordGeodetic{_coordGeodetic: coords}, err
 }
 
 func (c *CoordGeodetic) Altitude() float64 {
-	return c.ccoordGeodetic.GetAltitude()
+	return c._coordGeodetic.GetAltitude()
 }
 
 func (c *CoordGeodetic) Latitude() float64 {
-	return c.ccoordGeodetic.GetLatitude()
+	return c._coordGeodetic.GetLatitude()
 }
 
 func (c *CoordGeodetic) Longitude() float64 {
-	return c.ccoordGeodetic.GetLongitude()
+	return c._coordGeodetic.GetLongitude()
 }
 
 func (c *CoordGeodetic) ToString() string {
-	return c.ccoordGeodetic.ToString()
+	return c._coordGeodetic.ToString()
 }
 
 func (c *CoordGeodetic) GetCoords(in_degrees bool) (lat float64, lng float64, alt float64, err error) {

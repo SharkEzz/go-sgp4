@@ -274,7 +274,7 @@ static void* Swig_malloc(int c) {
 extern "C" {
 #endif
 
-void _wrap_Swig_free_cppsgp4_26e5a96209ca5723(void *_swig_go_0) {
+void _wrap_Swig_free_cppsgp4_ae7bdd03b5e00c24(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -284,7 +284,7 @@ void _wrap_Swig_free_cppsgp4_26e5a96209ca5723(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_cppsgp4_26e5a96209ca5723(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_cppsgp4_ae7bdd03b5e00c24(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -297,7 +297,7 @@ void *_wrap_Swig_malloc_cppsgp4_26e5a96209ca5723(intgo _swig_go_0) {
 }
 
 
-SGP4 *_wrap_new_SGP4_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+SGP4 *_wrap_new_SGP4_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = 0 ;
   SGP4 *result = 0 ;
   SGP4 *_swig_go_result;
@@ -316,7 +316,7 @@ SGP4 *_wrap_new_SGP4_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-Eci *_wrap_SGP4_FindPosition_cppsgp4_26e5a96209ca5723(SGP4 *_swig_go_0, DateTime *_swig_go_1) {
+Eci *_wrap_SGP4_FindPosition_cppsgp4_ae7bdd03b5e00c24(SGP4 *_swig_go_0, DateTime *_swig_go_1) {
   SGP4 *arg1 = (SGP4 *) 0 ;
   DateTime *arg2 = 0 ;
   SwigValueWrapper< Eci > result;
@@ -337,7 +337,7 @@ Eci *_wrap_SGP4_FindPosition_cppsgp4_26e5a96209ca5723(SGP4 *_swig_go_0, DateTime
 }
 
 
-void _wrap_delete_SGP4_cppsgp4_26e5a96209ca5723(SGP4 *_swig_go_0) {
+void _wrap_delete_SGP4_cppsgp4_ae7bdd03b5e00c24(SGP4 *_swig_go_0) {
   SGP4 *arg1 = (SGP4 *) 0 ;
   
   arg1 = *(SGP4 **)&_swig_go_0; 
@@ -353,7 +353,7 @@ void _wrap_delete_SGP4_cppsgp4_26e5a96209ca5723(SGP4 *_swig_go_0) {
 }
 
 
-Tle *_wrap_new_Tle_cppsgp4_26e5a96209ca5723(_gostring_ _swig_go_0, _gostring_ _swig_go_1, _gostring_ _swig_go_2) {
+Tle *_wrap_new_Tle_cppsgp4_ae7bdd03b5e00c24(_gostring_ _swig_go_0, _gostring_ _swig_go_1, _gostring_ _swig_go_2) {
   std::string *arg1 = 0 ;
   std::string *arg2 = 0 ;
   std::string *arg3 = 0 ;
@@ -385,7 +385,7 @@ Tle *_wrap_new_Tle_cppsgp4_26e5a96209ca5723(_gostring_ _swig_go_0, _gostring_ _s
 }
 
 
-_gostring_ _wrap_Tle_Name_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_Name_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -404,7 +404,7 @@ _gostring_ _wrap_Tle_Name_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-_gostring_ _wrap_Tle_Line1_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_Line1_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -423,7 +423,7 @@ _gostring_ _wrap_Tle_Line1_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-_gostring_ _wrap_Tle_Line2_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_Line2_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -442,7 +442,7 @@ _gostring_ _wrap_Tle_Line2_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-intgo _wrap_Tle_NoradNumber_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+intgo _wrap_Tle_NoradNumber_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -461,7 +461,7 @@ intgo _wrap_Tle_NoradNumber_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-_gostring_ _wrap_Tle_IntDesignator_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_IntDesignator_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -480,7 +480,7 @@ _gostring_ _wrap_Tle_IntDesignator_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-DateTime *_wrap_Tle_Epoch_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+DateTime *_wrap_Tle_Epoch_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   SwigValueWrapper< DateTime > result;
   DateTime *_swig_go_result;
@@ -499,7 +499,7 @@ DateTime *_wrap_Tle_Epoch_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-double _wrap_Tle_MeanMotionDt2_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+double _wrap_Tle_MeanMotionDt2_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   double result;
   double _swig_go_result;
@@ -518,7 +518,7 @@ double _wrap_Tle_MeanMotionDt2_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-double _wrap_Tle_MeanMotionDdt6_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+double _wrap_Tle_MeanMotionDdt6_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   double result;
   double _swig_go_result;
@@ -537,7 +537,7 @@ double _wrap_Tle_MeanMotionDdt6_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-double _wrap_Tle_BStar_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+double _wrap_Tle_BStar_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   double result;
   double _swig_go_result;
@@ -556,7 +556,7 @@ double _wrap_Tle_BStar_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-double _wrap_Tle_Inclination_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+double _wrap_Tle_Inclination_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0, bool _swig_go_1) {
   Tle *arg1 = (Tle *) 0 ;
   bool arg2 ;
   double result;
@@ -577,7 +577,7 @@ double _wrap_Tle_Inclination_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swi
 }
 
 
-double _wrap_Tle_RightAscendingNode_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+double _wrap_Tle_RightAscendingNode_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0, bool _swig_go_1) {
   Tle *arg1 = (Tle *) 0 ;
   bool arg2 ;
   double result;
@@ -598,7 +598,7 @@ double _wrap_Tle_RightAscendingNode_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bo
 }
 
 
-double _wrap_Tle_Eccentricity_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+double _wrap_Tle_Eccentricity_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   double result;
   double _swig_go_result;
@@ -617,7 +617,7 @@ double _wrap_Tle_Eccentricity_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-double _wrap_Tle_ArgumentPerigee_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+double _wrap_Tle_ArgumentPerigee_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0, bool _swig_go_1) {
   Tle *arg1 = (Tle *) 0 ;
   bool arg2 ;
   double result;
@@ -638,7 +638,7 @@ double _wrap_Tle_ArgumentPerigee_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool 
 }
 
 
-double _wrap_Tle_MeanAnomaly_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+double _wrap_Tle_MeanAnomaly_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0, bool _swig_go_1) {
   Tle *arg1 = (Tle *) 0 ;
   bool arg2 ;
   double result;
@@ -659,7 +659,7 @@ double _wrap_Tle_MeanAnomaly_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swi
 }
 
 
-double _wrap_Tle_MeanMotion_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+double _wrap_Tle_MeanMotion_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   double result;
   double _swig_go_result;
@@ -678,7 +678,7 @@ double _wrap_Tle_MeanMotion_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-intgo _wrap_Tle_OrbitNumber_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+intgo _wrap_Tle_OrbitNumber_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -697,7 +697,7 @@ intgo _wrap_Tle_OrbitNumber_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-_gostring_ _wrap_Tle_ToString_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_ToString_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -716,7 +716,7 @@ _gostring_ _wrap_Tle_ToString_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-void _wrap_delete_Tle_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+void _wrap_delete_Tle_cppsgp4_ae7bdd03b5e00c24(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   
   arg1 = *(Tle **)&_swig_go_0; 
@@ -732,7 +732,7 @@ void _wrap_delete_Tle_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
 }
 
 
-Observer *_wrap_new_Observer_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
+Observer *_wrap_new_Observer_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = 0 ;
   Observer *result = 0 ;
   Observer *_swig_go_result;
@@ -751,7 +751,7 @@ Observer *_wrap_new_Observer_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0)
 }
 
 
-CoordGeodetic *_wrap_Observer_GetLocation_cppsgp4_26e5a96209ca5723(Observer *_swig_go_0) {
+CoordGeodetic *_wrap_Observer_GetLocation_cppsgp4_ae7bdd03b5e00c24(Observer *_swig_go_0) {
   Observer *arg1 = (Observer *) 0 ;
   CoordGeodetic result;
   CoordGeodetic *_swig_go_result;
@@ -770,7 +770,7 @@ CoordGeodetic *_wrap_Observer_GetLocation_cppsgp4_26e5a96209ca5723(Observer *_sw
 }
 
 
-CoordTopocentric *_wrap_Observer_GetLookAngle_cppsgp4_26e5a96209ca5723(Observer *_swig_go_0, Eci *_swig_go_1) {
+CoordTopocentric *_wrap_Observer_GetLookAngle_cppsgp4_ae7bdd03b5e00c24(Observer *_swig_go_0, Eci *_swig_go_1) {
   Observer *arg1 = (Observer *) 0 ;
   Eci *arg2 = 0 ;
   CoordTopocentric result;
@@ -791,7 +791,7 @@ CoordTopocentric *_wrap_Observer_GetLookAngle_cppsgp4_26e5a96209ca5723(Observer 
 }
 
 
-void _wrap_delete_Observer_cppsgp4_26e5a96209ca5723(Observer *_swig_go_0) {
+void _wrap_delete_Observer_cppsgp4_ae7bdd03b5e00c24(Observer *_swig_go_0) {
   Observer *arg1 = (Observer *) 0 ;
   
   arg1 = *(Observer **)&_swig_go_0; 
@@ -807,7 +807,7 @@ void _wrap_delete_Observer_cppsgp4_26e5a96209ca5723(Observer *_swig_go_0) {
 }
 
 
-Eci *_wrap_new_Eci_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0, CoordGeodetic *_swig_go_1) {
+Eci *_wrap_new_Eci_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0, CoordGeodetic *_swig_go_1) {
   DateTime *arg1 = 0 ;
   CoordGeodetic *arg2 = 0 ;
   Eci *result = 0 ;
@@ -828,7 +828,7 @@ Eci *_wrap_new_Eci_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0, CoordGeodetic 
 }
 
 
-Vector *_wrap_Eci_Velocity_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
+Vector *_wrap_Eci_Velocity_cppsgp4_ae7bdd03b5e00c24(Eci *_swig_go_0) {
   Eci *arg1 = (Eci *) 0 ;
   Vector result;
   Vector *_swig_go_result;
@@ -847,7 +847,7 @@ Vector *_wrap_Eci_Velocity_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
 }
 
 
-DateTime *_wrap_Eci_GetDateTime_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
+DateTime *_wrap_Eci_GetDateTime_cppsgp4_ae7bdd03b5e00c24(Eci *_swig_go_0) {
   Eci *arg1 = (Eci *) 0 ;
   SwigValueWrapper< DateTime > result;
   DateTime *_swig_go_result;
@@ -866,7 +866,7 @@ DateTime *_wrap_Eci_GetDateTime_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
 }
 
 
-CoordGeodetic *_wrap_Eci_ToGeodetic_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
+CoordGeodetic *_wrap_Eci_ToGeodetic_cppsgp4_ae7bdd03b5e00c24(Eci *_swig_go_0) {
   Eci *arg1 = (Eci *) 0 ;
   CoordGeodetic result;
   CoordGeodetic *_swig_go_result;
@@ -885,7 +885,7 @@ CoordGeodetic *_wrap_Eci_ToGeodetic_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
 }
 
 
-void _wrap_delete_Eci_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
+void _wrap_delete_Eci_cppsgp4_ae7bdd03b5e00c24(Eci *_swig_go_0) {
   Eci *arg1 = (Eci *) 0 ;
   
   arg1 = *(Eci **)&_swig_go_0; 
@@ -901,7 +901,7 @@ void _wrap_delete_Eci_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
 }
 
 
-DateTime *_wrap_new_DateTime_cppsgp4_26e5a96209ca5723(intgo _swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, intgo _swig_go_5) {
+DateTime *_wrap_new_DateTime_cppsgp4_ae7bdd03b5e00c24(intgo _swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, intgo _swig_go_5) {
   int arg1 ;
   int arg2 ;
   int arg3 ;
@@ -930,7 +930,7 @@ DateTime *_wrap_new_DateTime_cppsgp4_26e5a96209ca5723(intgo _swig_go_0, intgo _s
 }
 
 
-DateTime *_wrap_DateTime_Now__SWIG_0_cppsgp4_26e5a96209ca5723(bool _swig_go_0) {
+DateTime *_wrap_DateTime_Now__SWIG_0_cppsgp4_ae7bdd03b5e00c24(bool _swig_go_0) {
   bool arg1 ;
   SwigValueWrapper< DateTime > result;
   DateTime *_swig_go_result;
@@ -949,7 +949,7 @@ DateTime *_wrap_DateTime_Now__SWIG_0_cppsgp4_26e5a96209ca5723(bool _swig_go_0) {
 }
 
 
-DateTime *_wrap_DateTime_Now__SWIG_1_cppsgp4_26e5a96209ca5723() {
+DateTime *_wrap_DateTime_Now__SWIG_1_cppsgp4_ae7bdd03b5e00c24() {
   SwigValueWrapper< DateTime > result;
   DateTime *_swig_go_result;
   
@@ -966,7 +966,7 @@ DateTime *_wrap_DateTime_Now__SWIG_1_cppsgp4_26e5a96209ca5723() {
 }
 
 
-double _wrap_DateTime_ToJulian_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0) {
+double _wrap_DateTime_ToJulian_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
   DateTime *arg1 = (DateTime *) 0 ;
   double result;
   double _swig_go_result;
@@ -985,7 +985,121 @@ double _wrap_DateTime_ToJulian_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0) {
 }
 
 
-void _wrap_delete_DateTime_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0) {
+intgo _wrap_DateTime_Year_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
+  DateTime *arg1 = (DateTime *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(DateTime **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (int)((DateTime const *)arg1)->Year();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_DateTime_Month_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
+  DateTime *arg1 = (DateTime *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(DateTime **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (int)((DateTime const *)arg1)->Month();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_DateTime_Day_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
+  DateTime *arg1 = (DateTime *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(DateTime **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (int)((DateTime const *)arg1)->Day();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_DateTime_Hour_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
+  DateTime *arg1 = (DateTime *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(DateTime **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (int)((DateTime const *)arg1)->Hour();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_DateTime_Minute_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
+  DateTime *arg1 = (DateTime *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(DateTime **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (int)((DateTime const *)arg1)->Minute();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_DateTime_Second_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
+  DateTime *arg1 = (DateTime *) 0 ;
+  int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(DateTime **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (int)((DateTime const *)arg1)->Second();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+void _wrap_delete_DateTime_cppsgp4_ae7bdd03b5e00c24(DateTime *_swig_go_0) {
   DateTime *arg1 = (DateTime *) 0 ;
   
   arg1 = *(DateTime **)&_swig_go_0; 
@@ -1001,7 +1115,7 @@ void _wrap_delete_DateTime_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0) {
 }
 
 
-void _wrap_CoordGeodetic_latitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordGeodetic_latitude_set_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0, double _swig_go_1) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double arg2 ;
   
@@ -1013,7 +1127,7 @@ void _wrap_CoordGeodetic_latitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_s
 }
 
 
-double _wrap_CoordGeodetic_latitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
+double _wrap_CoordGeodetic_latitude_get_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double result;
   double _swig_go_result;
@@ -1026,7 +1140,7 @@ double _wrap_CoordGeodetic_latitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *
 }
 
 
-void _wrap_CoordGeodetic_longitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordGeodetic_longitude_set_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0, double _swig_go_1) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double arg2 ;
   
@@ -1038,7 +1152,7 @@ void _wrap_CoordGeodetic_longitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_
 }
 
 
-double _wrap_CoordGeodetic_longitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
+double _wrap_CoordGeodetic_longitude_get_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double result;
   double _swig_go_result;
@@ -1051,7 +1165,7 @@ double _wrap_CoordGeodetic_longitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic 
 }
 
 
-void _wrap_CoordGeodetic_altitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordGeodetic_altitude_set_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0, double _swig_go_1) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double arg2 ;
   
@@ -1063,7 +1177,7 @@ void _wrap_CoordGeodetic_altitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_s
 }
 
 
-double _wrap_CoordGeodetic_altitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
+double _wrap_CoordGeodetic_altitude_get_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double result;
   double _swig_go_result;
@@ -1076,7 +1190,7 @@ double _wrap_CoordGeodetic_altitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *
 }
 
 
-_gostring_ _wrap_CoordGeodetic_ToString_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
+_gostring_ _wrap_CoordGeodetic_ToString_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -1095,7 +1209,7 @@ _gostring_ _wrap_CoordGeodetic_ToString_cppsgp4_26e5a96209ca5723(CoordGeodetic *
 }
 
 
-CoordGeodetic *_wrap_new_CoordGeodetic_cppsgp4_26e5a96209ca5723() {
+CoordGeodetic *_wrap_new_CoordGeodetic_cppsgp4_ae7bdd03b5e00c24() {
   CoordGeodetic *result = 0 ;
   CoordGeodetic *_swig_go_result;
   
@@ -1112,7 +1226,7 @@ CoordGeodetic *_wrap_new_CoordGeodetic_cppsgp4_26e5a96209ca5723() {
 }
 
 
-void _wrap_delete_CoordGeodetic_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
+void _wrap_delete_CoordGeodetic_cppsgp4_ae7bdd03b5e00c24(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   
   arg1 = *(CoordGeodetic **)&_swig_go_0; 
@@ -1128,7 +1242,7 @@ void _wrap_delete_CoordGeodetic_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go
 }
 
 
-void _wrap_CoordTopocentric_azimuth_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_azimuth_set_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -1140,7 +1254,7 @@ void _wrap_CoordTopocentric_azimuth_set_cppsgp4_26e5a96209ca5723(CoordTopocentri
 }
 
 
-double _wrap_CoordTopocentric_azimuth_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_azimuth_get_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -1153,7 +1267,7 @@ double _wrap_CoordTopocentric_azimuth_get_cppsgp4_26e5a96209ca5723(CoordTopocent
 }
 
 
-void _wrap_CoordTopocentric_elevation_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_elevation_set_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -1165,7 +1279,7 @@ void _wrap_CoordTopocentric_elevation_set_cppsgp4_26e5a96209ca5723(CoordTopocent
 }
 
 
-double _wrap_CoordTopocentric_elevation_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_elevation_get_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -1178,7 +1292,7 @@ double _wrap_CoordTopocentric_elevation_get_cppsgp4_26e5a96209ca5723(CoordTopoce
 }
 
 
-void _wrap_CoordTopocentric_Xrange_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_Xrange_set_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -1190,7 +1304,7 @@ void _wrap_CoordTopocentric_Xrange_set_cppsgp4_26e5a96209ca5723(CoordTopocentric
 }
 
 
-double _wrap_CoordTopocentric_Xrange_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_Xrange_get_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -1203,7 +1317,7 @@ double _wrap_CoordTopocentric_Xrange_get_cppsgp4_26e5a96209ca5723(CoordTopocentr
 }
 
 
-void _wrap_CoordTopocentric_range_rate_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_range_rate_set_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -1215,7 +1329,7 @@ void _wrap_CoordTopocentric_range_rate_set_cppsgp4_26e5a96209ca5723(CoordTopocen
 }
 
 
-double _wrap_CoordTopocentric_range_rate_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_range_rate_get_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -1228,7 +1342,7 @@ double _wrap_CoordTopocentric_range_rate_get_cppsgp4_26e5a96209ca5723(CoordTopoc
 }
 
 
-_gostring_ _wrap_CoordTopocentric_ToString_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
+_gostring_ _wrap_CoordTopocentric_ToString_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -1247,7 +1361,7 @@ _gostring_ _wrap_CoordTopocentric_ToString_cppsgp4_26e5a96209ca5723(CoordTopocen
 }
 
 
-CoordTopocentric *_wrap_new_CoordTopocentric_cppsgp4_26e5a96209ca5723() {
+CoordTopocentric *_wrap_new_CoordTopocentric_cppsgp4_ae7bdd03b5e00c24() {
   CoordTopocentric *result = 0 ;
   CoordTopocentric *_swig_go_result;
   
@@ -1264,7 +1378,7 @@ CoordTopocentric *_wrap_new_CoordTopocentric_cppsgp4_26e5a96209ca5723() {
 }
 
 
-void _wrap_delete_CoordTopocentric_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
+void _wrap_delete_CoordTopocentric_cppsgp4_ae7bdd03b5e00c24(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   
   arg1 = *(CoordTopocentric **)&_swig_go_0; 
@@ -1280,7 +1394,7 @@ void _wrap_delete_CoordTopocentric_cppsgp4_26e5a96209ca5723(CoordTopocentric *_s
 }
 
 
-SolarPosition *_wrap_new_SolarPosition_cppsgp4_26e5a96209ca5723() {
+SolarPosition *_wrap_new_SolarPosition_cppsgp4_ae7bdd03b5e00c24() {
   SolarPosition *result = 0 ;
   SolarPosition *_swig_go_result;
   
@@ -1297,7 +1411,7 @@ SolarPosition *_wrap_new_SolarPosition_cppsgp4_26e5a96209ca5723() {
 }
 
 
-Eci *_wrap_SolarPosition_FindPosition_cppsgp4_26e5a96209ca5723(SolarPosition *_swig_go_0, DateTime *_swig_go_1) {
+Eci *_wrap_SolarPosition_FindPosition_cppsgp4_ae7bdd03b5e00c24(SolarPosition *_swig_go_0, DateTime *_swig_go_1) {
   SolarPosition *arg1 = (SolarPosition *) 0 ;
   DateTime *arg2 = 0 ;
   SwigValueWrapper< Eci > result;
@@ -1318,7 +1432,7 @@ Eci *_wrap_SolarPosition_FindPosition_cppsgp4_26e5a96209ca5723(SolarPosition *_s
 }
 
 
-void _wrap_delete_SolarPosition_cppsgp4_26e5a96209ca5723(SolarPosition *_swig_go_0) {
+void _wrap_delete_SolarPosition_cppsgp4_ae7bdd03b5e00c24(SolarPosition *_swig_go_0) {
   SolarPosition *arg1 = (SolarPosition *) 0 ;
   
   arg1 = *(SolarPosition **)&_swig_go_0; 

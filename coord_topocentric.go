@@ -3,7 +3,7 @@ package sgp4
 import "github.com/SharkEzz/sgp4/internal/cppsgp4"
 
 type CoordTopocentric struct {
-	ccoordTopocentric cppsgp4.CoordTopocentric
+	_coordTopocentric cppsgp4.CoordTopocentric
 }
 
 func NewCoordTopocentric(azimuth, elevation, xrange, range_rate float64) (c *CoordTopocentric, err error) {
@@ -19,21 +19,21 @@ func NewCoordTopocentric(azimuth, elevation, xrange, range_rate float64) (c *Coo
 }
 
 func (c *CoordTopocentric) Azimuth() float64 {
-	return c.ccoordTopocentric.GetAzimuth()
+	return c._coordTopocentric.GetAzimuth()
 }
 
 func (c *CoordTopocentric) Elevation() float64 {
-	return c.ccoordTopocentric.GetElevation()
+	return c._coordTopocentric.GetElevation()
 }
 
 func (c *CoordTopocentric) Range() float64 {
-	return c.ccoordTopocentric.GetXrange()
+	return c._coordTopocentric.GetXrange()
 }
 
 func (c *CoordTopocentric) RangeRate() float64 {
-	return c.ccoordTopocentric.GetRange_rate()
+	return c._coordTopocentric.GetRange_rate()
 }
 
 func (c *CoordTopocentric) ToString() string {
-	return c.ccoordTopocentric.ToString()
+	return c._coordTopocentric.ToString()
 }
