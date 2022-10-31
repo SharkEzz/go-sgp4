@@ -10,7 +10,7 @@
     #include "Tle.h"
     #include "TleException.h"
     #include "DateTime.h"
-    #include "Helpers.h"
+    #include "SolarPosition.h"
 %}
 
 %include <typemaps.i>
@@ -35,23 +35,37 @@ public:
 class Tle {
 public:
     Tle(const std::string& name, const std::string& line_one, const std::string& line_two);
+    std::string Name() const;
     std::string Line1() const;
     std::string Line2() const;
-    std::string Name() const;
     unsigned int NoradNumber() const;
+    std::string IntDesignator() const;
     DateTime Epoch() const;
+    double MeanMotionDt2() const;
+    double MeanMotionDdt6() const;
+    double BStar() const;
+    double Inclination(bool in_degrees) const;
+    double RightAscendingNode(const bool in_degrees) const;
+    double Eccentricity() const;
+    double ArgumentPerigee(const bool in_degrees) const;
+    double MeanAnomaly(const bool in_degrees) const;
+    double MeanMotion() const;
+    unsigned int OrbitNumber() const;
+    std::string ToString() const;
 };
 
 class Observer {
 public:
     Observer(const CoordGeodetic &geo);
-    CoordTopocentric GetLookAngle(const Eci &eci);
     CoordGeodetic GetLocation() const;
+    CoordTopocentric GetLookAngle(const Eci &eci);
 };
 
 class Eci {
 public:
     Eci(const DateTime& dt, const CoordGeodetic& geo);
+    Vector Velocity() const;
+    DateTime GetDateTime() const;
     CoordGeodetic ToGeodetic() const;
 };
 
@@ -67,6 +81,7 @@ public:
     double latitude;
     double longitude;
     double altitude;
+    std::string ToString() const;
 };
 
 struct CoordTopocentric {
@@ -75,20 +90,11 @@ public:
     double elevation;
     double range;
     double range_rate;
+    std::string ToString() const;
 };
 
-// Helpers part
-
-namespace std {
-   %template(PassDetailsVector) vector<PassDetails>;
-}
-
-struct PassDetails
-{
+class SolarPosition {
 public:
-    DateTime aos;
-    DateTime los;
-    double max_elevation;
+    SolarPosition();
+    Eci FindPosition(const DateTime& dt);
 };
-
-std::vector<struct PassDetails> GeneratePassList(const CoordGeodetic &user_geo, SGP4 &sgp4, const DateTime &start_time, const DateTime &end_time, const int time_step);

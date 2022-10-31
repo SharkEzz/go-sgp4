@@ -8,7 +8,7 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-// source: cppsgp4/sgp4.i
+// source: internal/cppsgp4/sgp4.i
 
 #define SWIGMODULE cppsgp4
 
@@ -261,7 +261,7 @@ static void* Swig_malloc(int c) {
     #include "Tle.h"
     #include "TleException.h"
     #include "DateTime.h"
-    #include "Helpers.h"
+    #include "SolarPosition.h"
 
 
 #include <string>
@@ -270,25 +270,11 @@ static void* Swig_malloc(int c) {
 #include <vector>
 #include <stdexcept>
 
-SWIGINTERN std::vector< PassDetails >::const_reference std_vector_Sl_PassDetails_Sg__get(std::vector< PassDetails > *self,int i){
-                int size = int(self->size());
-                if (i>=0 && i<size)
-                    return (*self)[i];
-                else
-                    throw std::out_of_range("vector index out of range");
-            }
-SWIGINTERN void std_vector_Sl_PassDetails_Sg__set(std::vector< PassDetails > *self,int i,std::vector< PassDetails >::value_type const &val){
-                int size = int(self->size());
-                if (i>=0 && i<size)
-                    (*self)[i] = val;
-                else
-                    throw std::out_of_range("vector index out of range");
-            }
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-void _wrap_Swig_free_cppsgp4_50c2f758cc93d73e(void *_swig_go_0) {
+void _wrap_Swig_free_cppsgp4_26e5a96209ca5723(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -298,7 +284,7 @@ void _wrap_Swig_free_cppsgp4_50c2f758cc93d73e(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_cppsgp4_50c2f758cc93d73e(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_cppsgp4_26e5a96209ca5723(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -311,7 +297,7 @@ void *_wrap_Swig_malloc_cppsgp4_50c2f758cc93d73e(intgo _swig_go_0) {
 }
 
 
-SGP4 *_wrap_new_SGP4_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
+SGP4 *_wrap_new_SGP4_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
   Tle *arg1 = 0 ;
   SGP4 *result = 0 ;
   SGP4 *_swig_go_result;
@@ -330,7 +316,7 @@ SGP4 *_wrap_new_SGP4_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
 }
 
 
-Eci *_wrap_SGP4_FindPosition_cppsgp4_50c2f758cc93d73e(SGP4 *_swig_go_0, DateTime *_swig_go_1) {
+Eci *_wrap_SGP4_FindPosition_cppsgp4_26e5a96209ca5723(SGP4 *_swig_go_0, DateTime *_swig_go_1) {
   SGP4 *arg1 = (SGP4 *) 0 ;
   DateTime *arg2 = 0 ;
   SwigValueWrapper< Eci > result;
@@ -351,7 +337,7 @@ Eci *_wrap_SGP4_FindPosition_cppsgp4_50c2f758cc93d73e(SGP4 *_swig_go_0, DateTime
 }
 
 
-void _wrap_delete_SGP4_cppsgp4_50c2f758cc93d73e(SGP4 *_swig_go_0) {
+void _wrap_delete_SGP4_cppsgp4_26e5a96209ca5723(SGP4 *_swig_go_0) {
   SGP4 *arg1 = (SGP4 *) 0 ;
   
   arg1 = *(SGP4 **)&_swig_go_0; 
@@ -367,7 +353,7 @@ void _wrap_delete_SGP4_cppsgp4_50c2f758cc93d73e(SGP4 *_swig_go_0) {
 }
 
 
-Tle *_wrap_new_Tle_cppsgp4_50c2f758cc93d73e(_gostring_ _swig_go_0, _gostring_ _swig_go_1, _gostring_ _swig_go_2) {
+Tle *_wrap_new_Tle_cppsgp4_26e5a96209ca5723(_gostring_ _swig_go_0, _gostring_ _swig_go_1, _gostring_ _swig_go_2) {
   std::string *arg1 = 0 ;
   std::string *arg2 = 0 ;
   std::string *arg3 = 0 ;
@@ -399,45 +385,7 @@ Tle *_wrap_new_Tle_cppsgp4_50c2f758cc93d73e(_gostring_ _swig_go_0, _gostring_ _s
 }
 
 
-_gostring_ _wrap_Tle_Line1_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
-  Tle *arg1 = (Tle *) 0 ;
-  std::string result;
-  _gostring_ _swig_go_result;
-  
-  arg1 = *(Tle **)&_swig_go_0; 
-  
-  {
-    try {
-      result = ((Tle const *)arg1)->Line1();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
-  return _swig_go_result;
-}
-
-
-_gostring_ _wrap_Tle_Line2_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
-  Tle *arg1 = (Tle *) 0 ;
-  std::string result;
-  _gostring_ _swig_go_result;
-  
-  arg1 = *(Tle **)&_swig_go_0; 
-  
-  {
-    try {
-      result = ((Tle const *)arg1)->Line2();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
-  return _swig_go_result;
-}
-
-
-_gostring_ _wrap_Tle_Name_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_Name_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -456,7 +404,45 @@ _gostring_ _wrap_Tle_Name_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
 }
 
 
-intgo _wrap_Tle_NoradNumber_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_Line1_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  std::string result;
+  _gostring_ _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((Tle const *)arg1)->Line1();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
+  return _swig_go_result;
+}
+
+
+_gostring_ _wrap_Tle_Line2_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  std::string result;
+  _gostring_ _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((Tle const *)arg1)->Line2();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_Tle_NoradNumber_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   unsigned int result;
   intgo _swig_go_result;
@@ -475,7 +461,26 @@ intgo _wrap_Tle_NoradNumber_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
 }
 
 
-DateTime *_wrap_Tle_Epoch_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
+_gostring_ _wrap_Tle_IntDesignator_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  std::string result;
+  _gostring_ _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((Tle const *)arg1)->IntDesignator();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
+  return _swig_go_result;
+}
+
+
+DateTime *_wrap_Tle_Epoch_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   SwigValueWrapper< DateTime > result;
   DateTime *_swig_go_result;
@@ -494,7 +499,224 @@ DateTime *_wrap_Tle_Epoch_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
 }
 
 
-void _wrap_delete_Tle_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
+double _wrap_Tle_MeanMotionDt2_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->MeanMotionDt2();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_MeanMotionDdt6_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->MeanMotionDdt6();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_BStar_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->BStar();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_Inclination_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+  Tle *arg1 = (Tle *) 0 ;
+  bool arg2 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  arg2 = (bool)_swig_go_1; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->Inclination(arg2);;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_RightAscendingNode_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+  Tle *arg1 = (Tle *) 0 ;
+  bool arg2 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  arg2 = (bool)_swig_go_1; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->RightAscendingNode(arg2);;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_Eccentricity_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->Eccentricity();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_ArgumentPerigee_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+  Tle *arg1 = (Tle *) 0 ;
+  bool arg2 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  arg2 = (bool)_swig_go_1; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->ArgumentPerigee(arg2);;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_MeanAnomaly_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0, bool _swig_go_1) {
+  Tle *arg1 = (Tle *) 0 ;
+  bool arg2 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  arg2 = (bool)_swig_go_1; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->MeanAnomaly(arg2);;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+double _wrap_Tle_MeanMotion_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  double result;
+  double _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (double)((Tle const *)arg1)->MeanMotion();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+intgo _wrap_Tle_OrbitNumber_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  unsigned int result;
+  intgo _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = (unsigned int)((Tle const *)arg1)->OrbitNumber();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = result; 
+  return _swig_go_result;
+}
+
+
+_gostring_ _wrap_Tle_ToString_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
+  Tle *arg1 = (Tle *) 0 ;
+  std::string result;
+  _gostring_ _swig_go_result;
+  
+  arg1 = *(Tle **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((Tle const *)arg1)->ToString();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
+  return _swig_go_result;
+}
+
+
+void _wrap_delete_Tle_cppsgp4_26e5a96209ca5723(Tle *_swig_go_0) {
   Tle *arg1 = (Tle *) 0 ;
   
   arg1 = *(Tle **)&_swig_go_0; 
@@ -510,7 +732,7 @@ void _wrap_delete_Tle_cppsgp4_50c2f758cc93d73e(Tle *_swig_go_0) {
 }
 
 
-Observer *_wrap_new_Observer_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0) {
+Observer *_wrap_new_Observer_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = 0 ;
   Observer *result = 0 ;
   Observer *_swig_go_result;
@@ -529,7 +751,26 @@ Observer *_wrap_new_Observer_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0)
 }
 
 
-CoordTopocentric *_wrap_Observer_GetLookAngle_cppsgp4_50c2f758cc93d73e(Observer *_swig_go_0, Eci *_swig_go_1) {
+CoordGeodetic *_wrap_Observer_GetLocation_cppsgp4_26e5a96209ca5723(Observer *_swig_go_0) {
+  Observer *arg1 = (Observer *) 0 ;
+  CoordGeodetic result;
+  CoordGeodetic *_swig_go_result;
+  
+  arg1 = *(Observer **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((Observer const *)arg1)->GetLocation();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  *(CoordGeodetic **)&_swig_go_result = new CoordGeodetic(result); 
+  return _swig_go_result;
+}
+
+
+CoordTopocentric *_wrap_Observer_GetLookAngle_cppsgp4_26e5a96209ca5723(Observer *_swig_go_0, Eci *_swig_go_1) {
   Observer *arg1 = (Observer *) 0 ;
   Eci *arg2 = 0 ;
   CoordTopocentric result;
@@ -550,26 +791,7 @@ CoordTopocentric *_wrap_Observer_GetLookAngle_cppsgp4_50c2f758cc93d73e(Observer 
 }
 
 
-CoordGeodetic *_wrap_Observer_GetLocation_cppsgp4_50c2f758cc93d73e(Observer *_swig_go_0) {
-  Observer *arg1 = (Observer *) 0 ;
-  CoordGeodetic result;
-  CoordGeodetic *_swig_go_result;
-  
-  arg1 = *(Observer **)&_swig_go_0; 
-  
-  {
-    try {
-      result = ((Observer const *)arg1)->GetLocation();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  *(CoordGeodetic **)&_swig_go_result = new CoordGeodetic(result); 
-  return _swig_go_result;
-}
-
-
-void _wrap_delete_Observer_cppsgp4_50c2f758cc93d73e(Observer *_swig_go_0) {
+void _wrap_delete_Observer_cppsgp4_26e5a96209ca5723(Observer *_swig_go_0) {
   Observer *arg1 = (Observer *) 0 ;
   
   arg1 = *(Observer **)&_swig_go_0; 
@@ -585,7 +807,7 @@ void _wrap_delete_Observer_cppsgp4_50c2f758cc93d73e(Observer *_swig_go_0) {
 }
 
 
-Eci *_wrap_new_Eci_cppsgp4_50c2f758cc93d73e(DateTime *_swig_go_0, CoordGeodetic *_swig_go_1) {
+Eci *_wrap_new_Eci_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0, CoordGeodetic *_swig_go_1) {
   DateTime *arg1 = 0 ;
   CoordGeodetic *arg2 = 0 ;
   Eci *result = 0 ;
@@ -606,7 +828,45 @@ Eci *_wrap_new_Eci_cppsgp4_50c2f758cc93d73e(DateTime *_swig_go_0, CoordGeodetic 
 }
 
 
-CoordGeodetic *_wrap_Eci_ToGeodetic_cppsgp4_50c2f758cc93d73e(Eci *_swig_go_0) {
+Vector *_wrap_Eci_Velocity_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
+  Eci *arg1 = (Eci *) 0 ;
+  Vector result;
+  Vector *_swig_go_result;
+  
+  arg1 = *(Eci **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((Eci const *)arg1)->Velocity();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  *(Vector **)&_swig_go_result = new Vector(result); 
+  return _swig_go_result;
+}
+
+
+DateTime *_wrap_Eci_GetDateTime_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
+  Eci *arg1 = (Eci *) 0 ;
+  SwigValueWrapper< DateTime > result;
+  DateTime *_swig_go_result;
+  
+  arg1 = *(Eci **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((Eci const *)arg1)->GetDateTime();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  *(DateTime **)&_swig_go_result = new DateTime(result); 
+  return _swig_go_result;
+}
+
+
+CoordGeodetic *_wrap_Eci_ToGeodetic_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
   Eci *arg1 = (Eci *) 0 ;
   CoordGeodetic result;
   CoordGeodetic *_swig_go_result;
@@ -625,7 +885,7 @@ CoordGeodetic *_wrap_Eci_ToGeodetic_cppsgp4_50c2f758cc93d73e(Eci *_swig_go_0) {
 }
 
 
-void _wrap_delete_Eci_cppsgp4_50c2f758cc93d73e(Eci *_swig_go_0) {
+void _wrap_delete_Eci_cppsgp4_26e5a96209ca5723(Eci *_swig_go_0) {
   Eci *arg1 = (Eci *) 0 ;
   
   arg1 = *(Eci **)&_swig_go_0; 
@@ -641,7 +901,7 @@ void _wrap_delete_Eci_cppsgp4_50c2f758cc93d73e(Eci *_swig_go_0) {
 }
 
 
-DateTime *_wrap_new_DateTime_cppsgp4_50c2f758cc93d73e(intgo _swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, intgo _swig_go_5) {
+DateTime *_wrap_new_DateTime_cppsgp4_26e5a96209ca5723(intgo _swig_go_0, intgo _swig_go_1, intgo _swig_go_2, intgo _swig_go_3, intgo _swig_go_4, intgo _swig_go_5) {
   int arg1 ;
   int arg2 ;
   int arg3 ;
@@ -670,7 +930,7 @@ DateTime *_wrap_new_DateTime_cppsgp4_50c2f758cc93d73e(intgo _swig_go_0, intgo _s
 }
 
 
-DateTime *_wrap_DateTime_Now__SWIG_0_cppsgp4_50c2f758cc93d73e(bool _swig_go_0) {
+DateTime *_wrap_DateTime_Now__SWIG_0_cppsgp4_26e5a96209ca5723(bool _swig_go_0) {
   bool arg1 ;
   SwigValueWrapper< DateTime > result;
   DateTime *_swig_go_result;
@@ -689,7 +949,7 @@ DateTime *_wrap_DateTime_Now__SWIG_0_cppsgp4_50c2f758cc93d73e(bool _swig_go_0) {
 }
 
 
-DateTime *_wrap_DateTime_Now__SWIG_1_cppsgp4_50c2f758cc93d73e() {
+DateTime *_wrap_DateTime_Now__SWIG_1_cppsgp4_26e5a96209ca5723() {
   SwigValueWrapper< DateTime > result;
   DateTime *_swig_go_result;
   
@@ -706,7 +966,7 @@ DateTime *_wrap_DateTime_Now__SWIG_1_cppsgp4_50c2f758cc93d73e() {
 }
 
 
-double _wrap_DateTime_ToJulian_cppsgp4_50c2f758cc93d73e(DateTime *_swig_go_0) {
+double _wrap_DateTime_ToJulian_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0) {
   DateTime *arg1 = (DateTime *) 0 ;
   double result;
   double _swig_go_result;
@@ -725,7 +985,7 @@ double _wrap_DateTime_ToJulian_cppsgp4_50c2f758cc93d73e(DateTime *_swig_go_0) {
 }
 
 
-void _wrap_delete_DateTime_cppsgp4_50c2f758cc93d73e(DateTime *_swig_go_0) {
+void _wrap_delete_DateTime_cppsgp4_26e5a96209ca5723(DateTime *_swig_go_0) {
   DateTime *arg1 = (DateTime *) 0 ;
   
   arg1 = *(DateTime **)&_swig_go_0; 
@@ -741,7 +1001,7 @@ void _wrap_delete_DateTime_cppsgp4_50c2f758cc93d73e(DateTime *_swig_go_0) {
 }
 
 
-void _wrap_CoordGeodetic_latitude_set_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordGeodetic_latitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0, double _swig_go_1) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double arg2 ;
   
@@ -753,7 +1013,7 @@ void _wrap_CoordGeodetic_latitude_set_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_s
 }
 
 
-double _wrap_CoordGeodetic_latitude_get_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0) {
+double _wrap_CoordGeodetic_latitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double result;
   double _swig_go_result;
@@ -766,7 +1026,7 @@ double _wrap_CoordGeodetic_latitude_get_cppsgp4_50c2f758cc93d73e(CoordGeodetic *
 }
 
 
-void _wrap_CoordGeodetic_longitude_set_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordGeodetic_longitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0, double _swig_go_1) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double arg2 ;
   
@@ -778,7 +1038,7 @@ void _wrap_CoordGeodetic_longitude_set_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_
 }
 
 
-double _wrap_CoordGeodetic_longitude_get_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0) {
+double _wrap_CoordGeodetic_longitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double result;
   double _swig_go_result;
@@ -791,7 +1051,7 @@ double _wrap_CoordGeodetic_longitude_get_cppsgp4_50c2f758cc93d73e(CoordGeodetic 
 }
 
 
-void _wrap_CoordGeodetic_altitude_set_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordGeodetic_altitude_set_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0, double _swig_go_1) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double arg2 ;
   
@@ -803,7 +1063,7 @@ void _wrap_CoordGeodetic_altitude_set_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_s
 }
 
 
-double _wrap_CoordGeodetic_altitude_get_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0) {
+double _wrap_CoordGeodetic_altitude_get_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   double result;
   double _swig_go_result;
@@ -816,7 +1076,26 @@ double _wrap_CoordGeodetic_altitude_get_cppsgp4_50c2f758cc93d73e(CoordGeodetic *
 }
 
 
-CoordGeodetic *_wrap_new_CoordGeodetic_cppsgp4_50c2f758cc93d73e() {
+_gostring_ _wrap_CoordGeodetic_ToString_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
+  CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
+  std::string result;
+  _gostring_ _swig_go_result;
+  
+  arg1 = *(CoordGeodetic **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((CoordGeodetic const *)arg1)->ToString();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
+  return _swig_go_result;
+}
+
+
+CoordGeodetic *_wrap_new_CoordGeodetic_cppsgp4_26e5a96209ca5723() {
   CoordGeodetic *result = 0 ;
   CoordGeodetic *_swig_go_result;
   
@@ -833,7 +1112,7 @@ CoordGeodetic *_wrap_new_CoordGeodetic_cppsgp4_50c2f758cc93d73e() {
 }
 
 
-void _wrap_delete_CoordGeodetic_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0) {
+void _wrap_delete_CoordGeodetic_cppsgp4_26e5a96209ca5723(CoordGeodetic *_swig_go_0) {
   CoordGeodetic *arg1 = (CoordGeodetic *) 0 ;
   
   arg1 = *(CoordGeodetic **)&_swig_go_0; 
@@ -849,7 +1128,7 @@ void _wrap_delete_CoordGeodetic_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go
 }
 
 
-void _wrap_CoordTopocentric_azimuth_set_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_azimuth_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -861,7 +1140,7 @@ void _wrap_CoordTopocentric_azimuth_set_cppsgp4_50c2f758cc93d73e(CoordTopocentri
 }
 
 
-double _wrap_CoordTopocentric_azimuth_get_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_azimuth_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -874,7 +1153,7 @@ double _wrap_CoordTopocentric_azimuth_get_cppsgp4_50c2f758cc93d73e(CoordTopocent
 }
 
 
-void _wrap_CoordTopocentric_elevation_set_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_elevation_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -886,7 +1165,7 @@ void _wrap_CoordTopocentric_elevation_set_cppsgp4_50c2f758cc93d73e(CoordTopocent
 }
 
 
-double _wrap_CoordTopocentric_elevation_get_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_elevation_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -899,7 +1178,7 @@ double _wrap_CoordTopocentric_elevation_get_cppsgp4_50c2f758cc93d73e(CoordTopoce
 }
 
 
-void _wrap_CoordTopocentric_Xrange_set_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_Xrange_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -911,7 +1190,7 @@ void _wrap_CoordTopocentric_Xrange_set_cppsgp4_50c2f758cc93d73e(CoordTopocentric
 }
 
 
-double _wrap_CoordTopocentric_Xrange_get_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_Xrange_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -924,7 +1203,7 @@ double _wrap_CoordTopocentric_Xrange_get_cppsgp4_50c2f758cc93d73e(CoordTopocentr
 }
 
 
-void _wrap_CoordTopocentric_range_rate_set_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0, double _swig_go_1) {
+void _wrap_CoordTopocentric_range_rate_set_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0, double _swig_go_1) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double arg2 ;
   
@@ -936,7 +1215,7 @@ void _wrap_CoordTopocentric_range_rate_set_cppsgp4_50c2f758cc93d73e(CoordTopocen
 }
 
 
-double _wrap_CoordTopocentric_range_rate_get_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0) {
+double _wrap_CoordTopocentric_range_rate_get_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   double result;
   double _swig_go_result;
@@ -949,7 +1228,26 @@ double _wrap_CoordTopocentric_range_rate_get_cppsgp4_50c2f758cc93d73e(CoordTopoc
 }
 
 
-CoordTopocentric *_wrap_new_CoordTopocentric_cppsgp4_50c2f758cc93d73e() {
+_gostring_ _wrap_CoordTopocentric_ToString_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
+  CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
+  std::string result;
+  _gostring_ _swig_go_result;
+  
+  arg1 = *(CoordTopocentric **)&_swig_go_0; 
+  
+  {
+    try {
+      result = ((CoordTopocentric const *)arg1)->ToString();;
+    } catch (std::runtime_error &e) {
+      _swig_gopanic(e.what());
+    }
+  }
+  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
+  return _swig_go_result;
+}
+
+
+CoordTopocentric *_wrap_new_CoordTopocentric_cppsgp4_26e5a96209ca5723() {
   CoordTopocentric *result = 0 ;
   CoordTopocentric *_swig_go_result;
   
@@ -966,7 +1264,7 @@ CoordTopocentric *_wrap_new_CoordTopocentric_cppsgp4_50c2f758cc93d73e() {
 }
 
 
-void _wrap_delete_CoordTopocentric_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_swig_go_0) {
+void _wrap_delete_CoordTopocentric_cppsgp4_26e5a96209ca5723(CoordTopocentric *_swig_go_0) {
   CoordTopocentric *arg1 = (CoordTopocentric *) 0 ;
   
   arg1 = *(CoordTopocentric **)&_swig_go_0; 
@@ -982,227 +1280,48 @@ void _wrap_delete_CoordTopocentric_cppsgp4_50c2f758cc93d73e(CoordTopocentric *_s
 }
 
 
-std::vector< PassDetails > *_wrap_new_PassDetailsVector__SWIG_0_cppsgp4_50c2f758cc93d73e() {
-  std::vector< PassDetails > *result = 0 ;
-  std::vector< PassDetails > *_swig_go_result;
+SolarPosition *_wrap_new_SolarPosition_cppsgp4_26e5a96209ca5723() {
+  SolarPosition *result = 0 ;
+  SolarPosition *_swig_go_result;
   
   
   {
     try {
-      result = (std::vector< PassDetails > *)new std::vector< PassDetails >();;
+      result = (SolarPosition *)new SolarPosition();;
     } catch (std::runtime_error &e) {
       _swig_gopanic(e.what());
     }
   }
-  *(std::vector< PassDetails > **)&_swig_go_result = (std::vector< PassDetails > *)result; 
+  *(SolarPosition **)&_swig_go_result = (SolarPosition *)result; 
   return _swig_go_result;
 }
 
 
-std::vector< PassDetails > *_wrap_new_PassDetailsVector__SWIG_1_cppsgp4_50c2f758cc93d73e(long long _swig_go_0) {
-  std::vector< PassDetails >::size_type arg1 ;
-  std::vector< PassDetails > *result = 0 ;
-  std::vector< PassDetails > *_swig_go_result;
+Eci *_wrap_SolarPosition_FindPosition_cppsgp4_26e5a96209ca5723(SolarPosition *_swig_go_0, DateTime *_swig_go_1) {
+  SolarPosition *arg1 = (SolarPosition *) 0 ;
+  DateTime *arg2 = 0 ;
+  SwigValueWrapper< Eci > result;
+  Eci *_swig_go_result;
   
-  arg1 = (size_t)_swig_go_0; 
+  arg1 = *(SolarPosition **)&_swig_go_0; 
+  arg2 = *(DateTime **)&_swig_go_1; 
   
   {
     try {
-      result = (std::vector< PassDetails > *)new std::vector< PassDetails >(arg1);;
+      result = (arg1)->FindPosition((DateTime const &)*arg2);;
     } catch (std::runtime_error &e) {
       _swig_gopanic(e.what());
     }
   }
-  *(std::vector< PassDetails > **)&_swig_go_result = (std::vector< PassDetails > *)result; 
+  *(Eci **)&_swig_go_result = new Eci(result); 
   return _swig_go_result;
 }
 
 
-std::vector< PassDetails > *_wrap_new_PassDetailsVector__SWIG_2_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0) {
-  std::vector< PassDetails > *arg1 = 0 ;
-  std::vector< PassDetails > *result = 0 ;
-  std::vector< PassDetails > *_swig_go_result;
+void _wrap_delete_SolarPosition_cppsgp4_26e5a96209ca5723(SolarPosition *_swig_go_0) {
+  SolarPosition *arg1 = (SolarPosition *) 0 ;
   
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  
-  {
-    try {
-      result = (std::vector< PassDetails > *)new std::vector< PassDetails >((std::vector< PassDetails > const &)*arg1);;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  *(std::vector< PassDetails > **)&_swig_go_result = (std::vector< PassDetails > *)result; 
-  return _swig_go_result;
-}
-
-
-long long _wrap_PassDetailsVector_size_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  std::vector< PassDetails >::size_type result;
-  long long _swig_go_result;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  
-  {
-    try {
-      result = ((std::vector< PassDetails > const *)arg1)->size();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-long long _wrap_PassDetailsVector_capacity_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  std::vector< PassDetails >::size_type result;
-  long long _swig_go_result;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  
-  {
-    try {
-      result = ((std::vector< PassDetails > const *)arg1)->capacity();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_PassDetailsVector_reserve_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0, long long _swig_go_1) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  std::vector< PassDetails >::size_type arg2 ;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  arg2 = (size_t)_swig_go_1; 
-  
-  {
-    try {
-      (arg1)->reserve(arg2);;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  
-}
-
-
-bool _wrap_PassDetailsVector_isEmpty_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  bool result;
-  bool _swig_go_result;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  
-  {
-    try {
-      result = (bool)((std::vector< PassDetails > const *)arg1)->empty();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_PassDetailsVector_clear_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  
-  {
-    try {
-      (arg1)->clear();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  
-}
-
-
-void _wrap_PassDetailsVector_add_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0, PassDetails *_swig_go_1) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  std::vector< PassDetails >::value_type *arg2 = 0 ;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  arg2 = *(std::vector< PassDetails >::value_type **)&_swig_go_1; 
-  
-  {
-    try {
-      (arg1)->push_back((std::vector< PassDetails >::value_type const &)*arg2);;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  
-}
-
-
-PassDetails *_wrap_PassDetailsVector_get_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0, intgo _swig_go_1) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  int arg2 ;
-  std::vector< PassDetails >::value_type *result = 0 ;
-  PassDetails *_swig_go_result;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  arg2 = (int)_swig_go_1; 
-  
-  {
-    try {
-      try {
-        result = (std::vector< PassDetails >::value_type *) &std_vector_Sl_PassDetails_Sg__get(arg1,arg2);
-      } catch(std::out_of_range &_e) {
-        (void)_e;
-        _swig_gopanic("C++ std::out_of_range exception thrown");
-        
-      };
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  *(std::vector< PassDetails >::value_type **)&_swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_PassDetailsVector_set_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0, intgo _swig_go_1, PassDetails *_swig_go_2) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  int arg2 ;
-  std::vector< PassDetails >::value_type *arg3 = 0 ;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
-  arg2 = (int)_swig_go_1; 
-  arg3 = *(std::vector< PassDetails >::value_type **)&_swig_go_2; 
-  
-  {
-    try {
-      try {
-        std_vector_Sl_PassDetails_Sg__set(arg1,arg2,(PassDetails const &)*arg3);
-      } catch(std::out_of_range &_e) {
-        (void)_e;
-        _swig_gopanic("C++ std::out_of_range exception thrown");
-        
-      };
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  
-}
-
-
-void _wrap_delete_PassDetailsVector_cppsgp4_50c2f758cc93d73e(std::vector< PassDetails > *_swig_go_0) {
-  std::vector< PassDetails > *arg1 = (std::vector< PassDetails > *) 0 ;
-  
-  arg1 = *(std::vector< PassDetails > **)&_swig_go_0; 
+  arg1 = *(SolarPosition **)&_swig_go_0; 
   
   {
     try {
@@ -1212,141 +1331,6 @@ void _wrap_delete_PassDetailsVector_cppsgp4_50c2f758cc93d73e(std::vector< PassDe
     }
   }
   
-}
-
-
-void _wrap_PassDetails_aos_set_cppsgp4_50c2f758cc93d73e(PassDetails *_swig_go_0, DateTime *_swig_go_1) {
-  PassDetails *arg1 = (PassDetails *) 0 ;
-  DateTime *arg2 = (DateTime *) 0 ;
-  
-  arg1 = *(PassDetails **)&_swig_go_0; 
-  arg2 = *(DateTime **)&_swig_go_1; 
-  
-  if (arg1) (arg1)->aos = *arg2;
-  
-}
-
-
-DateTime *_wrap_PassDetails_aos_get_cppsgp4_50c2f758cc93d73e(PassDetails *_swig_go_0) {
-  PassDetails *arg1 = (PassDetails *) 0 ;
-  DateTime *result = 0 ;
-  DateTime *_swig_go_result;
-  
-  arg1 = *(PassDetails **)&_swig_go_0; 
-  
-  result = (DateTime *)& ((arg1)->aos);
-  *(DateTime **)&_swig_go_result = (DateTime *)result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_PassDetails_los_set_cppsgp4_50c2f758cc93d73e(PassDetails *_swig_go_0, DateTime *_swig_go_1) {
-  PassDetails *arg1 = (PassDetails *) 0 ;
-  DateTime *arg2 = (DateTime *) 0 ;
-  
-  arg1 = *(PassDetails **)&_swig_go_0; 
-  arg2 = *(DateTime **)&_swig_go_1; 
-  
-  if (arg1) (arg1)->los = *arg2;
-  
-}
-
-
-DateTime *_wrap_PassDetails_los_get_cppsgp4_50c2f758cc93d73e(PassDetails *_swig_go_0) {
-  PassDetails *arg1 = (PassDetails *) 0 ;
-  DateTime *result = 0 ;
-  DateTime *_swig_go_result;
-  
-  arg1 = *(PassDetails **)&_swig_go_0; 
-  
-  result = (DateTime *)& ((arg1)->los);
-  *(DateTime **)&_swig_go_result = (DateTime *)result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_PassDetails_max_elevation_set_cppsgp4_50c2f758cc93d73e(PassDetails *_swig_go_0, double _swig_go_1) {
-  PassDetails *arg1 = (PassDetails *) 0 ;
-  double arg2 ;
-  
-  arg1 = *(PassDetails **)&_swig_go_0; 
-  arg2 = (double)_swig_go_1; 
-  
-  if (arg1) (arg1)->max_elevation = arg2;
-  
-}
-
-
-double _wrap_PassDetails_max_elevation_get_cppsgp4_50c2f758cc93d73e(PassDetails *_swig_go_0) {
-  PassDetails *arg1 = (PassDetails *) 0 ;
-  double result;
-  double _swig_go_result;
-  
-  arg1 = *(PassDetails **)&_swig_go_0; 
-  
-  result = (double) ((arg1)->max_elevation);
-  _swig_go_result = result; 
-  return _swig_go_result;
-}
-
-
-PassDetails *_wrap_new_PassDetails_cppsgp4_50c2f758cc93d73e() {
-  PassDetails *result = 0 ;
-  PassDetails *_swig_go_result;
-  
-  
-  {
-    try {
-      result = (PassDetails *)new PassDetails();;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  *(PassDetails **)&_swig_go_result = (PassDetails *)result; 
-  return _swig_go_result;
-}
-
-
-void _wrap_delete_PassDetails_cppsgp4_50c2f758cc93d73e(PassDetails *_swig_go_0) {
-  PassDetails *arg1 = (PassDetails *) 0 ;
-  
-  arg1 = *(PassDetails **)&_swig_go_0; 
-  
-  {
-    try {
-      delete arg1;;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  
-}
-
-
-std::vector< PassDetails > *_wrap_GeneratePassList_cppsgp4_50c2f758cc93d73e(CoordGeodetic *_swig_go_0, SGP4 *_swig_go_1, DateTime *_swig_go_2, DateTime *_swig_go_3, intgo _swig_go_4) {
-  CoordGeodetic *arg1 = 0 ;
-  SGP4 *arg2 = 0 ;
-  DateTime *arg3 = 0 ;
-  DateTime *arg4 = 0 ;
-  int arg5 ;
-  std::vector< PassDetails > result;
-  std::vector< PassDetails > *_swig_go_result;
-  
-  arg1 = *(CoordGeodetic **)&_swig_go_0; 
-  arg2 = *(SGP4 **)&_swig_go_1; 
-  arg3 = *(DateTime **)&_swig_go_2; 
-  arg4 = *(DateTime **)&_swig_go_3; 
-  arg5 = (int)_swig_go_4; 
-  
-  {
-    try {
-      result = GeneratePassList((CoordGeodetic const &)*arg1,*arg2,(DateTime const &)*arg3,(DateTime const &)*arg4,arg5);;
-    } catch (std::runtime_error &e) {
-      _swig_gopanic(e.what());
-    }
-  }
-  *(std::vector< PassDetails > **)&_swig_go_result = new std::vector< PassDetails >(result); 
-  return _swig_go_result;
 }
 
 

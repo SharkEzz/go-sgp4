@@ -3,17 +3,16 @@ package sgp4
 import (
 	"time"
 
-	"github.com/SharkEzz/sgp4/cppsgp4"
-	"github.com/SharkEzz/sgp4/utils"
+	"github.com/SharkEzz/sgp4/internal/cppsgp4"
 )
 
 type SGP4 struct {
 	csgp4 cppsgp4.SGP4
 }
 
-func NewSGP4(tle cppsgp4.Tle) (p *SGP4, err error) {
+func NewSGP4(tle *Tle) (p *SGP4, err error) {
 	defer catch(&err)
-	cp := cppsgp4.NewSGP4(tle)
+	cp := cppsgp4.NewSGP4(tle.ctle)
 
 	return &SGP4{
 		csgp4: cp,
@@ -24,20 +23,17 @@ func (s *SGP4) SGP4() cppsgp4.SGP4 {
 	return s.csgp4
 }
 
-func (s *SGP4) Position(lt time.Time) (lat float64, lng float64, alt float64, err error) {
+func (s *SGP4) FindPosition(dt *DateTime) *Eci {
+	return &Eci{s.csgp4.FindPosition(dt.cdateTime)}
+}
+
+func (s *SGP4) Position(lt time.Time) (eci *Eci, err error) {
 	defer catch(&err)
 
 	dt, err := NewDateTimeFromTime(lt.UTC())
 	if err != nil {
-		return 0, 0, 0, err
+		return nil, err
 	}
 
-	pos := s.csgp4.FindPosition(dt)
-	geo := pos.ToGeodetic()
-
-	lat = utils.Rad2Deg(geo.GetLatitude())
-	lng = utils.Rad2Deg(geo.GetLongitude())
-	alt = geo.GetAltitude()
-
-	return lat, lng, alt, err
+	return s.FindPosition(dt), err
 }
