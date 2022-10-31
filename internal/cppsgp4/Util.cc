@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 #include "Util.h"
 
 #include <algorithm>
@@ -25,7 +24,7 @@ namespace Util
 {
     namespace
     {
-        struct IsDigit: std::unary_function<char, bool>
+        struct IsDigit : std::unary_function<char, bool>
         {
             bool operator()(char c) const
             {
@@ -34,19 +33,19 @@ namespace Util
         };
     }
 
-    void TrimLeft(std::string& s)
+    void TrimLeft(std::string &s)
     {
         s.erase(s.begin(),
                 std::find_if(s.begin(), s.end(), std::not1(IsDigit())));
     }
 
-    void TrimRight(std::string& s)
+    void TrimRight(std::string &s)
     {
         s.erase(std::find_if(s.rbegin(), s.rend(), std::not1(IsDigit())).base(),
                 s.end());
     }
 
-    void Trim(std::string& s)
+    void Trim(std::string &s)
     {
         TrimLeft(s);
         TrimRight(s);
