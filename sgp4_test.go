@@ -55,7 +55,11 @@ func TestSGP4_FindPosition(t *testing.T) {
 				t.Fatal(err)
 			}
 
-			lat, lng, alt, err := sgp4.GetGeodeticCoords(eci, true)
+			geodetic, err := eci.ToGeodetic()
+			if err != nil {
+				t.Fatal(err)
+			}
+			lat, lng, alt, err := geodetic.GetCoords(true)
 			if err != nil {
 				t.Fatal(err)
 			}

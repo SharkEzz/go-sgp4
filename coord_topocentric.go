@@ -18,10 +18,6 @@ func NewCoordTopocentric(azimuth, elevation, xrange, range_rate float64) (c *Coo
 	return &CoordTopocentric{coords}, err
 }
 
-func (c *CoordTopocentric) CoordTopocentric() cppsgp4.CoordTopocentric {
-	return c.ccoordTopocentric
-}
-
 func (c *CoordTopocentric) Azimuth() float64 {
 	return c.ccoordTopocentric.GetAzimuth()
 }
@@ -36,4 +32,8 @@ func (c *CoordTopocentric) Range() float64 {
 
 func (c *CoordTopocentric) RangeRate() float64 {
 	return c.ccoordTopocentric.GetRange_rate()
+}
+
+func (c *CoordTopocentric) ToString() string {
+	return c.ccoordTopocentric.ToString()
 }

@@ -20,10 +20,6 @@ func NewDateTimeFromTime(t time.Time) (dt *DateTime, err error) {
 	}, err
 }
 
-func (dt *DateTime) DateTime() cppsgp4.DateTime {
-	return dt.cdateTime
-}
-
 func NewDateTimeNow() (*DateTime, error) {
 	return NewDateTimeFromTime(time.Now())
 }

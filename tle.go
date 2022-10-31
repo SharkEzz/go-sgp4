@@ -12,10 +12,6 @@ func NewTle(name, line1, line2 string) (t *Tle, err error) {
 	return &Tle{cppsgp4.NewTle(name, line1, line2)}, err
 }
 
-func (t *Tle) Tle() cppsgp4.Tle {
-	return t.ctle
-}
-
 func (t *Tle) Name() string {
 	return t.ctle.Name()
 }

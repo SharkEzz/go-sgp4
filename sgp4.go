@@ -19,10 +19,6 @@ func NewSGP4(tle *Tle) (p *SGP4, err error) {
 	}, nil
 }
 
-func (s *SGP4) SGP4() cppsgp4.SGP4 {
-	return s.csgp4
-}
-
 func (s *SGP4) FindPosition(dt *DateTime) *Eci {
 	return &Eci{s.csgp4.FindPosition(dt.cdateTime)}
 }
