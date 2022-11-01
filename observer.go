@@ -9,15 +9,17 @@ type Observer struct {
 func NewObserver(coords *CoordGeodetic) (o *Observer, err error) {
 	defer catch(&err)
 
-	obs := cppsgp4.NewObserver(coords._coordGeodetic)
-
-	return &Observer{obs}, err
+	return &Observer{cppsgp4.NewObserver(coords._coordGeodetic)}, err
 }
 
-func (o *Observer) GetLocation() *CoordGeodetic {
-	return &CoordGeodetic{o.cobserver.GetLocation()}
+func (o *Observer) GetLocation() (c *CoordGeodetic, err error) {
+	defer catch(&err)
+
+	return &CoordGeodetic{o.cobserver.GetLocation()}, err
 }
 
-func (o *Observer) GetLookAngle(sat *Eci) *CoordTopocentric {
-	return &CoordTopocentric{o.cobserver.GetLookAngle(sat.ceci)}
+func (o *Observer) GetLookAngle(sat *Eci) (c *CoordTopocentric, err error) {
+	defer catch(&err)
+
+	return &CoordTopocentric{o.cobserver.GetLookAngle(sat.ceci)}, err
 }

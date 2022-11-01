@@ -9,13 +9,10 @@ type CoordGeodetic struct {
 	_coordGeodetic cppsgp4.CoordGeodetic
 }
 
-func NewCoordGeodetic(lat, lon, alt float64) (c *CoordGeodetic, err error) {
+func NewCoordGeodetic(lat, lng, alt float64, is_radian bool) (c *CoordGeodetic, err error) {
 	defer catch(&err)
 
-	coords := cppsgp4.NewCoordGeodetic()
-	coords.SetAltitude(alt)
-	coords.SetLatitude(lat)
-	coords.SetLongitude(lon)
+	coords := cppsgp4.NewCoordGeodetic(lat, lng, alt, is_radian)
 
 	return &CoordGeodetic{_coordGeodetic: coords}, err
 }

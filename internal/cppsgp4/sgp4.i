@@ -64,7 +64,6 @@ public:
 class Eci {
 public:
     Eci(const DateTime& dt, const CoordGeodetic& geo);
-    Vector Velocity() const;
     DateTime GetDateTime() const;
     CoordGeodetic ToGeodetic() const;
 };
@@ -84,6 +83,7 @@ public:
 
 struct CoordGeodetic {
 public:
+    CoordGeodetic(double lat, double lon, double alt, bool is_radians = false);
     double latitude;
     double longitude;
     double altitude;
@@ -92,6 +92,7 @@ public:
 
 struct CoordTopocentric {
 public:
+    CoordTopocentric(double az, double el, double rnge, double rnge_rate);
     double azimuth;
     double elevation;
     double range;

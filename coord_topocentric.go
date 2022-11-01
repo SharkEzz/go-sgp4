@@ -9,11 +9,7 @@ type CoordTopocentric struct {
 func NewCoordTopocentric(azimuth, elevation, xrange, range_rate float64) (c *CoordTopocentric, err error) {
 	defer catch(&err)
 
-	coords := cppsgp4.NewCoordTopocentric()
-	coords.SetAzimuth(azimuth)
-	coords.SetElevation(elevation)
-	coords.SetXrange(xrange)
-	coords.SetRange_rate(range_rate)
+	coords := cppsgp4.NewCoordTopocentric(azimuth, elevation, xrange, range_rate)
 
 	return &CoordTopocentric{coords}, err
 }

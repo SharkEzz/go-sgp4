@@ -19,7 +19,7 @@ func (e *Eci) ToGeodetic() (c *CoordGeodetic, err error) {
 
 	coords := e.ceci.ToGeodetic()
 
-	geodetic, err := NewCoordGeodetic(coords.GetLatitude(), coords.GetLongitude(), coords.GetAltitude())
+	geodetic, err := NewCoordGeodetic(coords.GetLatitude(), coords.GetLongitude(), coords.GetAltitude(), true)
 	if err != nil {
 		return nil, err
 	}
