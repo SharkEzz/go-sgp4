@@ -1,3 +1,3 @@
-module github.com/SharkEzz/sgp4
+module github.com/SharkEzz/go-sgp4
 
 go 1.19
