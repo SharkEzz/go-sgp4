@@ -11,6 +11,7 @@
     #include "TleException.h"
     #include "DateTime.h"
     #include "SolarPosition.h"
+    #include "Vector.h"
 %}
 
 %include <typemaps.i>
