@@ -3,7 +3,7 @@ package sgp4_test
 import (
 	"testing"
 
-	"github.com/SharkEzz/sgp4"
+	"github.com/SharkEzz/go-sgp4"
 )
 
 func TestSGP4_Tle(t *testing.T) {

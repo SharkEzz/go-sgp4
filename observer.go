@@ -1,6 +1,6 @@
 package sgp4
 
-import "github.com/SharkEzz/sgp4/internal/cppsgp4"
+import "github.com/SharkEzz/go-sgp4/internal/cppsgp4"
 
 type Observer struct {
 	cobserver cppsgp4.Observer

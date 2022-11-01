@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SharkEzz/sgp4"
+	"github.com/SharkEzz/go-sgp4"
 )
 
 const (

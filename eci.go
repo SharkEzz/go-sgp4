@@ -1,7 +1,7 @@
 package sgp4
 
 import (
-	"github.com/SharkEzz/sgp4/internal/cppsgp4"
+	"github.com/SharkEzz/go-sgp4/internal/cppsgp4"
 )
 
 type Eci struct {
