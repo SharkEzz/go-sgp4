@@ -33,3 +33,7 @@ func (c *CoordTopocentric) RangeRate() float64 {
 func (c *CoordTopocentric) ToString() string {
 	return c._coordTopocentric.ToString()
 }
+
+func (c *CoordTopocentric) Close() {
+	cppsgp4.DeleteCoordTopocentric(c._coordTopocentric)
+}

@@ -24,5 +24,11 @@ func (e *Eci) ToGeodetic() (c *CoordGeodetic, err error) {
 		return nil, err
 	}
 
+	cppsgp4.DeleteCoordGeodetic(coords)
+
 	return geodetic, err
+}
+
+func (e *Eci) Close() {
+	cppsgp4.DeleteEci(e.ceci)
 }

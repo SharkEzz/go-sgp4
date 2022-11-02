@@ -47,3 +47,7 @@ func (c *CoordGeodetic) GetCoords(in_degrees bool) (lat float64, lng float64, al
 
 	return lat, lng, alt, err
 }
+
+func (c *CoordGeodetic) Close() {
+	cppsgp4.DeleteCoordGeodetic(c._coordGeodetic)
+}

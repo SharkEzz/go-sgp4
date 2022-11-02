@@ -3,7 +3,7 @@ package sgp4
 import "github.com/SharkEzz/go-sgp4/internal/cppsgp4"
 
 type Tle struct {
-	ctle cppsgp4.Tle
+	_tle cppsgp4.Tle
 }
 
 func NewTle(name, line1, line2 string) (t *Tle, err error) {
@@ -13,45 +13,49 @@ func NewTle(name, line1, line2 string) (t *Tle, err error) {
 }
 
 func (t *Tle) Name() string {
-	return t.ctle.Name()
+	return t._tle.Name()
 }
 
 func (t *Tle) Line1() string {
-	return t.ctle.Line1()
+	return t._tle.Line1()
 }
 
 func (t *Tle) Line2() string {
-	return t.ctle.Line2()
+	return t._tle.Line2()
 }
 
 func (t *Tle) Epoch() *DateTime {
-	return &DateTime{t.ctle.Epoch()}
+	return &DateTime{t._tle.Epoch()}
 }
 
 func (t *Tle) Inclination(in_degrees bool) float64 {
-	return t.ctle.Inclination(in_degrees)
+	return t._tle.Inclination(in_degrees)
 }
 
 func (t *Tle) RightAscensionNode(in_degrees bool) float64 {
-	return t.ctle.RightAscendingNode(in_degrees)
+	return t._tle.RightAscendingNode(in_degrees)
 }
 
 func (t *Tle) Eccentricity() float64 {
-	return t.ctle.Eccentricity()
+	return t._tle.Eccentricity()
 }
 
 func (t *Tle) ArgumentPerigee(in_degrees bool) float64 {
-	return t.ctle.ArgumentPerigee(in_degrees)
+	return t._tle.ArgumentPerigee(in_degrees)
 }
 
 func (t *Tle) MeanAnomaly(in_degrees bool) float64 {
-	return t.ctle.MeanAnomaly(in_degrees)
+	return t._tle.MeanAnomaly(in_degrees)
 }
 
 func (t *Tle) MeanMotion() float64 {
-	return t.ctle.MeanMotion()
+	return t._tle.MeanMotion()
 }
 
 func (t *Tle) BStar() float64 {
-	return t.ctle.BStar()
+	return t._tle.BStar()
+}
+
+func (t *Tle) Close() {
+	cppsgp4.DeleteTle(t._tle)
 }

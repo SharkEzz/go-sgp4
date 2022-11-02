@@ -17,10 +17,13 @@ func TestSGP4_FindPosition(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	defer tle.Close()
+
 	p, err := sgp4.NewSGP4(tle)
 	if err != nil {
 		t.Fatal(err)
 	}
+	defer p.Close()
 
 	tests := []struct {
 		name    string
@@ -55,11 +58,14 @@ func TestSGP4_FindPosition(t *testing.T) {
 			if err != nil {
 				t.Fatal(err)
 			}
+			defer eci.Close()
 
 			geodetic, err := eci.ToGeodetic()
 			if err != nil {
 				t.Fatal(err)
 			}
+			defer geodetic.Close()
+
 			lat, lng, alt, err := geodetic.GetCoords(true)
 			if err != nil {
 				t.Fatal(err)

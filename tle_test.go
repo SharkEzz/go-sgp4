@@ -11,6 +11,7 @@ func TestSGP4_Tle(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	defer tle.Close()
 
 	if tle.Name() != "ISS (ZARYA)" {
 		t.Fatal("tle.Name() != \"ISS (ZARYA)\"")

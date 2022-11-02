@@ -51,3 +51,7 @@ func (dt *DateTime) Second() int {
 func (dt *DateTime) Time() time.Time {
 	return time.Date(dt.Year(), time.Month(dt.Month()), dt.Day(), dt.Hour(), dt.Minute(), dt.Second(), 0, time.UTC)
 }
+
+func (dt *DateTime) Close() {
+	cppsgp4.DeleteDateTime(dt._dateTime)
+}

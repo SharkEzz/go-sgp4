@@ -7,22 +7,22 @@ import (
 )
 
 type SGP4 struct {
-	csgp4 cppsgp4.SGP4
+	_sgp4 cppsgp4.SGP4
 }
 
 func NewSGP4(tle *Tle) (p *SGP4, err error) {
 	defer catch(&err)
-	cp := cppsgp4.NewSGP4(tle.ctle)
+	cp := cppsgp4.NewSGP4(tle._tle)
 
 	return &SGP4{
-		csgp4: cp,
+		_sgp4: cp,
 	}, nil
 }
 
 func (s *SGP4) PositionFromDateTime(dt *DateTime) (eci *Eci, err error) {
 	defer catch(&err)
 
-	return &Eci{s.csgp4.FindPosition(dt._dateTime)}, err
+	return &Eci{s._sgp4.FindPosition(dt._dateTime)}, err
 }
 
 func (s *SGP4) PositionFromTime(lt time.Time) (eci *Eci, err error) {
@@ -34,4 +34,8 @@ func (s *SGP4) PositionFromTime(lt time.Time) (eci *Eci, err error) {
 	}
 
 	return s.PositionFromDateTime(dt)
+}
+
+func (s *SGP4) Close() {
+	cppsgp4.DeleteSGP4(s._sgp4)
 }
